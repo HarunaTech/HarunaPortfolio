@@ -41,6 +41,48 @@ li {
   display: inline-block;
   margin-right: 2px; /* This line of code will add space between the list items (About me, work etc)*/
 }
+.main-image{
+  width: 70%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-image {
+  width: 250px;
+  height: 200px;
+  margin:15px
+}
+
+.page-section{
+  display:flex;
+  flex-direction:row
+}
+
+.image-grid{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.small-projects{
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+p{
+margin-left: auto;
+margin-right: auto;
+}
+
+h2{
+  border-right: 2px solid black;
+  padding: 20px;
+  flex: 0 0 20%
+}
 
 /**
 ul{
@@ -53,13 +95,27 @@ li {
   padding: 0;
 
 } **/
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   p {
     font-size: 1.25rem;
   }
+
+  .small-projects{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .small-image{
+    width:350px;
+    height:300px;
+  }
+
+  .main-image{
+    
+  }
   
 }
-@media (max-width: 800px) {
+@media sc(max-width: 800px) {
   p {font-size: 1.5rem;
   
 
