@@ -37,10 +37,32 @@ ul {
   list-style: none;
 }
 
+/**This line of code was used to reposition the h2 and the hero-banner section **/
+
+.hero-banner{
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  position: relative;
+}
+
+.hero-banner h2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: aqua;
+  
+}
+
+/* This line of code will add space between the list items (About me, work etc)*/
+
 li {
   display: inline-block;
-  margin-right: 2px; /* This line of code will add space between the list items (About me, work etc)*/
-}
+  margin-right: 2px;
+ }
+
+ /* This line of code is for adjusting the pictures on the pages*/
 .main-image{
   width: 70%;
   height: 300px;
@@ -60,17 +82,17 @@ li {
 }
 
 .image-grid{
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .small-projects{
   margin-right: auto;
   margin-left: auto;
   display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 p{
@@ -78,24 +100,15 @@ margin-left: auto;
 margin-right: auto;
 }
 
+
+/* This line of code is used to create border line */
 h2{
   border-right: 2px solid black;
   padding: 20px;
   flex: 0 0 20%
 }
 
-/**
-ul{
-  float: left;
-} 
-
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-} **/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 478px) {
   p {
     font-size: 1.25rem;
   }
@@ -110,14 +123,27 @@ li {
     height:300px;
   }
 
+@media sc(max-width: 1200px) {
+  p {font-size: 1.5rem;
+  
+  }  
+/**
+ul{
+  float: left;
+} 
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+} 
+
+
   .main-image{
     
   }
   
 }
-@media sc(max-width: 800px) {
-  p {font-size: 1.5rem;
-  
 
-  }
-}
+}**/
